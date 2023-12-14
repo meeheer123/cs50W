@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendent</title>
+    <style>
+        ul > li /*direct children (can also use ul li which is a descendent selector)*/ 
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>list item one</li>
+        <li>list item two</li>
+        <ul>
+            <li>sublist item 1</li>
+            <li>sublist item 2</li>
+        </ul>
+        <li>list item three</li>
+    </ol>
+</body>
+</html>

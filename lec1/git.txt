@@ -1,0 +1,11 @@
+to clone:
+git clone <url>
+
+to get history of git changes:
+git log
+
+to go to previous state:
+git reset
+
+git reset --hard <commit>  goes back to commit mentioned
+git reset --hard origin/master  resets it back to github version
