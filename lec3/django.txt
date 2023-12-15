@@ -1,0 +1,27 @@
+To start the project we need the command:
+django-admin startproject PROJECT_NAME
+
+To run the project:
+python manage.py runserver
+
+To make an application:
+python manage.py startapp APP_NAME
+
+every django projects has one or more django applications
+
+manage.py --> execute commands on the project
+settings.py --> contains important configuration settings
+urls.py --> table of contents [table of routes]
+views.py --> this is where we write our functions (for app)
+
+
+Things to do after creating app:
+1. go to settings.py of project and under installed apps add the APP_NAME
+2. go inside urls.py of project and add path('APP_NAME/', include("APP_NAME.urls))
+3. go to the app and create urls.py file with contents:
+    from django.urls import path
+    from . import views
+    urlpatterns = [
+        path("DESIRED_PATH", views.FUNCTION_NAME, name="NAME"),
+    ]
+4. go to views.py of app and create a function which takes request as parameter
