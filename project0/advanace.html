@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div>
@@ -16,15 +17,42 @@
     <p class="adv-search-heading">Advanced Search</p>
     <div class="div-line"></div>
     <div class="div-adv">
-        <p class="advanced-line">Find pages with...</p>
+        <h2 class="advanced-line">Find pages with...</h2>
         <form action="https://www.google.com/search">
             <div class="rows">
                 <div class="left">
                     <p>all these words: </p>
                 </div>
                 <div class="right">
-                    <input type="text" name="q" class="form">
+                    <input type="text" name="as_q" class="form-control">
                 </div>
+            </div>
+            <div class="rows">
+                <div class="left">
+                    <p>this exact word or phrase: </p>
+                </div>
+                <div class="right">
+                    <input type="text" name="as_epq" class="form-control">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="left">
+                    <p>any of these words: </p>
+                </div>
+                <div class="right">
+                    <input type="text" name="as_oq" class="form-control">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="left">
+                    <p>none of these words: </p>
+                </div>
+                <div class="right">
+                    <input type="text" name="as_eq" class="form-control">
+                </div>
+            </div>
+            <div class="btn-s">
+                <input type="submit" value="Advanced" class="btn btn-inp btn-adv">
             </div>
         </form>
     </div>

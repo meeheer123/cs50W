@@ -98,7 +98,22 @@
     width: 385px;
 }
 
-.form
+.form-control
 {
     width: 385px;
+}
+
+.btn-adv
+{
+    box-shadow: none;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+}
+
+.btn-s
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
 }
