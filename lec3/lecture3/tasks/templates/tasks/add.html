@@ -7,7 +7,7 @@
     <form action="{% url 'tasks:add' %}" method="post">
         <!-- need to add this token so that it is able to submit the data -->
         {% csrf_token %}
-        <input type="text" name="task">
+        {{ form }}
         <input type="submit">
     </form>
     <!-- this piece of code goes to urls.py file and find the path which points to index-->

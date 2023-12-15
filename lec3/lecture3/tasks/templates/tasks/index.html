@@ -6,6 +6,8 @@
     <ul>
         {% for task in tasks %}
             <li>{{ task }}</li>
+        {% empty %}
+            <li>No Tasks.</li>
         {% endfor %}
     </ul>
     <!-- this piece of code goes to urls.py file and find the path which points to add-->
