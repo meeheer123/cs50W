@@ -7,4 +7,8 @@
         <input type="text" name="task">
         <input type="submit">
     </form>
+    <!-- this piece of code goes to urls.py file and find the path which points to index-->
+    <!-- basically the path with name attribute set to index-->
+    <!-- django finds the url whose name is index and links us directly to that route -->
+    <a href="{% url 'index' %}">View Tasks</a>
 {% endblock body %}

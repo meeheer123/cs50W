@@ -8,5 +8,9 @@
             <li>{{ task }}</li>
         {% endfor %}
     </ul>
+    <!-- this piece of code goes to urls.py file and find the path which points to add-->
+    <!-- basically the path with name attribute -->
+    <!-- django finds the url whose name is add and links us directly to that route -->
+    <a href="{% url 'add' %}">Add a New Task</a>
 {% endblock body %}
 
