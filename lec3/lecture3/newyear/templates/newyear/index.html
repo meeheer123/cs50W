@@ -1,19 +1,13 @@
+<!-- just means load all the static files for this page -->
+<!-- re run the django server since it cannot load css after being added to the file -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Year</title>
-    <style>
-        .center-div
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 90vh;
-            font-size: 70px;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'newyear/styles.css' %}">
 </head>
 <body>
     <div class="center-div">
