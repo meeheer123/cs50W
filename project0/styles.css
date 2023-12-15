@@ -1,0 +1,104 @@
+.nav
+{
+    /* removes the disc or circle infront of ul items */
+    list-style-type: none;
+    /* used for expanding navbar */
+    display: flex;
+    /* expands navbar in horizontal direction */
+    flex-direction: row;
+    /* we do this to make the contents go to the right */
+    justify-content: flex-end;
+}
+
+.nav-item
+{
+    margin: 10px;
+}
+
+.centre-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round
+{
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0px auto;
+    width: 638px;
+    width: 300%;
+    max-width: 584px;
+    margin-top: 45px;
+}
+
+.btn-inp
+{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.adv-search-heading
+{
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.div-line
+{
+    border-bottom: 1px solid gray;
+}
+
+.advanced-line
+{
+    font-size: 16px;
+    color: #333333;
+
+}
+
+.div-adv
+{
+    margin: 40px;
+}
+
+.rows
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left
+{
+    width: 200px;
+}
+
+.right
+{
+    width: 385px;
+}
+
+.form
+{
+    width: 385px;
+}
